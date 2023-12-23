@@ -122,7 +122,7 @@ MonoBehaviour:
         m_Calls: []
   DebugActive: 0
   FeedbacksList:
-  - rid: 2574267268595712014
+  - rid: 2574267310319337472
   KeepPlayModeChanges: 0
   PerformanceMode: 0
   StopFeedbacksOnDisable: 0
@@ -130,11 +130,11 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 2574267268595712014
+    - rid: 2574267310319337472
       type: {class: MMF_ScaleShake, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
         Active: 1
-        UniqueID: 1769959164
+        UniqueID: -1416304494
         Label: Scale Shake
         ChannelMode: 0
         Channel: 0
@@ -199,11 +199,11 @@ MonoBehaviour:
         Owner: {fileID: 1108080853599171385}
         DebugActive: 0
         TargetShaker: {fileID: 0}
-        Duration: 0.5
+        Duration: 0.18
         ResetShakerValuesAfterShake: 1
         ResetTargetValuesAfterShake: 1
-        ShakeSpeed: 31.36
-        ShakeRange: 0.2
+        ShakeSpeed: 35
+        ShakeRange: 0.27
         ShakeMainDirection: {x: 1, y: 1, z: 0}
         RandomizeDirection: 0
         ShakeAltDirection: {x: 0, y: 1, z: 0}
@@ -262,7 +262,7 @@ MonoBehaviour:
   ChannelMode: 0
   Channel: 0
   MMChannelDefinition: {fileID: 0}
-  ShakeDuration: 0.5
+  ShakeDuration: 0.25
   PlayOnAwake: 0
   PermanentShake: 0
   Interruptible: 1
@@ -275,9 +275,9 @@ MonoBehaviour:
   Mode: 0
   TargetTransform: {fileID: 0}
   TargetRectTransform: {fileID: 0}
-  ShakeSpeed: 20
-  ShakeRange: 0.5
-  ShakeMainDirection: {x: 0, y: 1, z: 0}
+  ShakeSpeed: 31.91
+  ShakeRange: 0.09
+  ShakeMainDirection: {x: 1, y: 1, z: 0}
   RandomizeDirection: 0
   ShakeAltDirection: {x: 0, y: 1, z: 0}
   RandomizeDirectionOnPlay: 0

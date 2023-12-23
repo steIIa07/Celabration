@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a884fd80b5c5cc94d8656a7fd84f3fdb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bestScoreData: {fileID: 11400000, guid: cfbb6dbb410fdc94ca14ddb2c0ceeda3, type: 2}
+  - level1_ScoreData: {fileID: 11400000, guid: ecda34a14fce9fc4691f1ce5e6adb012, type: 2}
+  - level2_ScoreData: {fileID: 11400000, guid: 12c1f06f7cb1a7046881d1abdcaec715, type: 2}
+  - level3_ScoreData: {fileID: 11400000, guid: 5bc835a6c85f0cd4bb184553f925dcd4, type: 2}
+  - bestScoreText: {instanceID: 0}
+  - playScoreText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

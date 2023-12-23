@@ -809,7 +809,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnSystem: {fileID: 676175026}
   respawnTime: 2
-  scoreData: {fileID: 11400000, guid: 12c1f06f7cb1a7046881d1abdcaec715, type: 2}
 --- !u!61 &787884073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10874,7 +10873,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -10899,23 +10898,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &382348309241161492
-GameObject:
+--- !u!114 &245078381378117314
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 678435048645586362}
-  - component: {fileID: 2422945277518268292}
-  m_Layer: 0
-  m_Name: ScoreManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_GameObject: {fileID: 2848783342307786322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d31d8975399e34f8223ced8dff7653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreData: {fileID: 11400000, guid: 12c1f06f7cb1a7046881d1abdcaec715, type: 2}
+  timeLimit: 300
+  timeScore: 300
+  coinScore: 2000
 --- !u!199 &562441081517233397
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -10990,21 +10988,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!4 &678435048645586362
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382348309241161492}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.76363, y: 2.4727206, z: 0.5282432}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1138414948662323173
 Transform:
   m_ObjectHideFlags: 0
@@ -15899,23 +15882,38 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &2422945277518268292
-MonoBehaviour:
+--- !u!1 &2848783342307786322
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382348309241161492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72d31d8975399e34f8223ced8dff7653, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreData: {fileID: 11400000, guid: 12c1f06f7cb1a7046881d1abdcaec715, type: 2}
-  timeLimit: 180
-  timeScore: 100
-  coinScore: 2000
-  deathScore: -700
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3147171219694269692}
+  - component: {fileID: 245078381378117314}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3147171219694269692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2848783342307786322}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.76363, y: 2.4727206, z: 0.5282432}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3959142183307640590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16003,6 +16001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  bestScore: {fileID: 11400000, guid: cfbb6dbb410fdc94ca14ddb2c0ceeda3, type: 2}
 --- !u!1001 &5192629131329984607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16135,6 +16134,6 @@ SceneRoots:
   - {fileID: 2138041299}
   - {fileID: 1046490330}
   - {fileID: 6243332112391722846}
-  - {fileID: 678435048645586362}
   - {fileID: 1007511620}
   - {fileID: 432761396}
+  - {fileID: 3147171219694269692}

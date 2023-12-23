@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreData: {fileID: 11400000, guid: ecda34a14fce9fc4691f1ce5e6adb012, type: 2}
   timeLimit: 180
-  timeScore: 100
+  timeScore: 300
   coinScore: 2000
-  deathScore: -700
+  deathScore: -900

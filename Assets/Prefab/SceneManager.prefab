@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  bestScore: {fileID: 11400000, guid: cfbb6dbb410fdc94ca14ddb2c0ceeda3, type: 2}
