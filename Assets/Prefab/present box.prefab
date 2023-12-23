@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c04487f286753f40a67be9005d52f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mMF_Player: {fileID: 0}
   maxForce: 9
   forceMultiplier: 1.4
   arrowControl: {fileID: 0}
